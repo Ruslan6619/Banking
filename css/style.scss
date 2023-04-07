@@ -924,3 +924,74 @@ footer{
     flex-wrap: wrap;
   }
 }
+
+.owl-nav .owl-next:after{
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  content: "\f178";
+  font-size: 30px;
+  color: black;
+  @include max-screen(767px){
+    display: none;
+  }
+
+}
+
+.owl-nav .owl-next{
+  position: absolute;
+  bottom: -80px;
+  right: 32%;
+
+}
+.owl-carousel .owl-nav.disabled{
+  display: inline-block;
+}
+
+
+.owl-nav .owl-prev:before{
+  content: "\f177";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 30px;
+  color: black;
+  @include max-screen(767px){
+    display: none;
+  }
+
+}
+
+.owl-nav .owl-prev{
+  position: absolute;
+  bottom: -80px;
+  right: 36%;
+  @include max-screen(835px){
+    right: 40%;
+  }
+}
+
+.owl-carousel.owl-loaded{
+  display: flex;
+}
+
+.owl-dots .owl-dot span{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: black;
+  border-radius: 20px;
+  margin-right: 15px;
+  @include min-screen(429px){
+    display: none;
+  }
+}
+
+.owl-dots{
+  display: inherit;
+  position: absolute;
+  bottom: -30px;
+  left: 40%;
+}
+
+.owl-dot.active{
+  opacity: 0.3;
+}
