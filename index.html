@@ -9,12 +9,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scrollflow.js"></script>
 
 </head>
+
 <body>
+
+<div id="dialog" title="Entrance" class="form">
+
+    <form action="#" name="" method="post">
+
+        <div class="entrance">
+            <input type="email" placeholder="Email" name="email" >
+        </div>
+
+        <div class="entrance">
+            <input type="password" placeholder="Password" name="password">
+        </div>
+
+        <div class="check">
+            <label>
+                <input type="checkbox" name="Remember-me" >
+                Remember me
+            </label>
+        </div>
+
+        <div class="form-sign-in">
+            <button type="submit">Sign in</button>
+        </div>
+
+        <div class="registration">
+            <a href="form_registration.html" target="_blank">Registration</a>
+        </div>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -56,7 +110,8 @@
 
     </ul>
 </nav>
-        <a href="#" class="sign-in">Sign In</a>
+        <a href="#" class="sign-in" id="opener" >Sign In</a>
+
 </div>
  </header>
 
@@ -69,7 +124,7 @@
             <div class="banner">
                 <h1>Every transaction <br> is special for us.</h1>
                 <p>Aiciatis unde omnis iste natus error sit <br> voluptatem accusantium doloremque laudan.</p>
-                <a href="#">Get Started</a>
+                <a href="form_registration.html" target="_blank">Get Started</a>
             </div>
 
             <div class="banner-img">
@@ -103,7 +158,7 @@
 </section>
 
 
-<section class="business">
+<section class="business scrollflow -opacity -slide-top">
 
     <div class="container">
 
@@ -199,7 +254,7 @@
 </section>
 
 
-<section class="productivity">
+<section class="productivity scrollflow -opacity -slide-bottom">
 
     <div class="container d-flex align-center justify-between box-productivity">
 
@@ -211,7 +266,7 @@
         <div class="title-productivity">
             <h3>Boost  Productivity</h3>
             <p>Ciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Ciatis unde omnis iste natus error sit.</p>
-            <a href="#">Get Started</a>
+            <a href="form_registration.html" target="_blank">Get Started</a>
         </div>
 
     </div>
@@ -220,14 +275,14 @@
 
 
 
-<section class="output">
+<section class="output scrollflow -opacity -slide-top">
 
     <div class="container d-flex align-center box-highest-output justify-between">
 
         <div class="box-output">
             <h3>Highest Output</h3>
             <p>Ciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.Ciatis unde omnis iste natus error sit.</p>
-            <a href="#">Get Started</a>
+            <a href="form_registration.html" target="_blank">Get Started</a>
         </div>
 
 
@@ -240,7 +295,7 @@
 
 
 
-<section class="trusted">
+<section class="trusted scrollflow -opacity -slide-bottom">
     <div class="container box-trusted">
 
 
@@ -350,11 +405,20 @@
 
 </footer>
 
+
+
+
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/scrollflow.js"></script>
 <script src="https://kit.fontawesome.com/dd27ff6269.js" crossorigin="anonymous"></script>
 <script src="js/owl.carousel.js"></script>
 
 <script src="js/scripts.js"></script>
+
+
+
+
 
  </body>
 </html>

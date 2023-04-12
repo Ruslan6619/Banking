@@ -106,3 +106,53 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+
+
+
+
+
+$( function() {
+
+    $( "#dialog" ).dialog({
+        autoOpen: false,
+        modal: true,
+        width:450,
+        height:350,
+
+
+        show: {
+            effect: "blind",
+            duration: 1000
+        },
+
+        hide: {
+            effect: "explode",
+            duration: 1000
+        }
+
+    });
+
+    if (window.matchMedia('(max-width: 767px)').matches){
+        $( "#dialog" ).dialog({
+            width: 300,
+        })
+    }
+
+    $( "#opener" ).on( "click", function() {
+        $( "#dialog" ).dialog( "open" );
+    });
+} );
+
+
+
+
+
+
+
+
+
+
+
+
+
