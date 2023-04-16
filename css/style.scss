@@ -1072,6 +1072,9 @@ footer{
   border-radius: 12px;
   max-width: 527px;
   margin: 100px auto;
+  @include max-screen(428px){
+    max-width: 310px;
+  }
   h2{
     text-align: center;
     padding: 20px 0;
@@ -1082,6 +1085,9 @@ footer{
   max-width: 450px;
   padding-bottom: 20px;
   margin: auto;
+  @include max-screen(428px){
+    max-width: 280px;
+  }
   input{
     width: 100%;
     padding: 10px 0 10px 4px;
